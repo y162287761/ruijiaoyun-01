@@ -15,3 +15,17 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#sed -i '$a src-git lienol https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+
+
+#Add app
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+#git clone https://github.com/fw876/helloworld.git package/lean/luci-app-ssr-plus
+#git clone https://github.com/vernesong/OpenClash.git package/OpenClash
+git clone https://github.com/lisaac/luci-app-dockerman.git package/lean/luci-app-dockerman
+
+#add theme
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+
