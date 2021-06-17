@@ -26,6 +26,5 @@ git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-v
 git clone https://github.com/lisaac/luci-app-dockerman.git package/lean/luci-app-dockerman
 
 #add theme
-rm -rf package/lean/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+rm -rf package/lean/luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
